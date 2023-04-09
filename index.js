@@ -5,12 +5,18 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let generatedPwOne = document.getElementById("generated-pw-one")
 let generatedPwTwo = document.getElementById("generated-pw-two")
 let pwGeneratorBtn = document.getElementById("pw-generator-btn")
+let resetPasswordBtn = document.getElementById("reset-password-btn")
 
 let passwordLength = 15
 
 pwGeneratorBtn.addEventListener( "click", function() {
     generatedPwOne.textContent = generatePassword()
     generatedPwTwo.textContent = generatePassword()
+})
+
+resetPasswordBtn.addEventListener( "click", function() {
+    generatedPwOne.textContent = ""
+    generatedPwTwo.textContent = ""
 })
 
 
