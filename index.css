@@ -62,17 +62,22 @@ button{
     color: #ffffff;
     border-radius: 6px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
-    transition: all 200ms ease-out;
+    transition: all 200ms ease-in-out;
 }
 
 button:hover{
-    border: 1px solid #10B981;
+    border: 1px solid #273549;
 }
 
 #reset-password-btn{
     color: #10B981;
     background: none;
     border: 1px solid #10B981;
+    transition: all 200ms ease-in-out;
+}
+
+#reset-password:hover{
+    border: 1px solid #273549;
 }
 
 
